@@ -2,29 +2,22 @@ package stepDefinitions;
 
 import org.openqa.selenium.WebDriver;
 
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.AccountPage;
-import pages.HomePage;
+import pages.Navbar;
 import pages.SignInPage;
 
 public class SignIn extends BrowserStart {
 	
-	WebDriver driver = getDriver();
-	HomePage homePage;
+	Navbar navbar;
 	SignInPage signInPage;
 	AccountPage accountPage;
-	
-	@Given("^I am on the homepage$")
-	public void i_am_on_the_homepage() throws Throwable {
-	    driver.navigate().to("http://automationpractice.com/index.php");
-	}
 
 	@When("^If I click on Sign In$")
 	public void if_I_click_on() throws Throwable {
-		HomePage homePage = new HomePage(driver);
-	    signInPage = homePage.clickOnSignIn();
+		Navbar navbar = new Navbar(driver);
+	    signInPage = navbar.clickOnSignIn();
 	}
 
 	@When("^I fill in my details and submit$")

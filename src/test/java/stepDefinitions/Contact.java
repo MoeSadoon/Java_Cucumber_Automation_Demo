@@ -6,18 +6,17 @@ import org.openqa.selenium.WebDriver;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.ContactPage;
-import pages.HomePage;
+import pages.Navbar;
 
 public class Contact extends BrowserStart {
 	
-	WebDriver driver = getDriver();
-	HomePage home;
+	Navbar navbar;
 	ContactPage contact;
 	
 	@When("^I click on Contact Us$")
 	public void i_click_on_Contact_Us() throws Throwable {
-	    HomePage home = new HomePage(driver);
-	    contact =  home.clickOnContact();
+	    Navbar navbar = new Navbar(driver);
+	    contact =  navbar.clickOnContact();
 	}
 
 	@When("^I fill in form$")

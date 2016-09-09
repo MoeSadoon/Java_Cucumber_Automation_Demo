@@ -22,5 +22,14 @@ public class SignInPage extends AbstractPage {
 		return new AccountPage(driver);
 	}
 	
+	//Method below is condensed for the purposes of other tests where user needs to be logged in
+	public AccountPage LogIn(String email, String password){
+		driver.findElement(By.className("login")).click();
+		driver.findElement(By.id("email")).sendKeys(email);
+		driver.findElement(By.id("passwd")).sendKeys(password);
+		driver.findElement(By.id("SubmitLogin")).click();
+		return new AccountPage(driver);
+	}
+	
 
 }
