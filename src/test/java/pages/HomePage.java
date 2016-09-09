@@ -13,4 +13,9 @@ public class HomePage extends AbstractPage {
 		driver.findElement(By.className("login")).click();
 		return new SignInPage(driver);
 	}
+	
+	public ContactPage clickOnContact(){
+		driver.findElement(By.id("contact-link")).click();
+		return new ContactPage(driver);
+	}
 }

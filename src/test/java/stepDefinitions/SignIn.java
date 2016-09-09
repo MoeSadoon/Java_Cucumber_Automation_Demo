@@ -21,8 +21,8 @@ public class SignIn extends BrowserStart {
 	    driver.navigate().to("http://automationpractice.com/index.php");
 	}
 
-	@When("^If I click on \"(.*?)\"$")
-	public void if_I_click_on(String value) throws Throwable {
+	@When("^If I click on Sign In$")
+	public void if_I_click_on() throws Throwable {
 		HomePage homePage = new HomePage(driver);
 	    signInPage = homePage.clickOnSignIn();
 	}

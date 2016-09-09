@@ -6,6 +6,6 @@ Feature: Signing in to the website
 
   Scenario: Sign in
     Given I am on the homepage
-    When If I click on "Sign in"
+    When If I click on Sign In
     And I fill in my details and submit
     Then I should be directed to my account summary page
