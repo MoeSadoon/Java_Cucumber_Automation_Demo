@@ -30,8 +30,9 @@ public class ContactPage extends AbstractPage {
 	
 	public void CheckMessageConfirmation(){
 		Assert.assertTrue(driver.findElement(By.className("alert-success"))
-				.getText().equals("Your message has been successfully sent to your team."));
+				.getText().equals("Your message has been successfully sent to our team."));
 	}
+	
 	
 	
 }

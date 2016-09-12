@@ -27,6 +27,7 @@ public class SignInPage extends AbstractPage {
 		driver.findElement(By.className("login")).click();
 		driver.findElement(By.id("email")).sendKeys(email);
 		driver.findElement(By.id("passwd")).sendKeys(password);
+
 		driver.findElement(By.id("SubmitLogin")).click();
 		return new AccountPage(driver);
 	}

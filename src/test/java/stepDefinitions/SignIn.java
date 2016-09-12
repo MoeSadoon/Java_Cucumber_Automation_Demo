@@ -1,7 +1,6 @@
 package stepDefinitions;
 
-import org.openqa.selenium.WebDriver;
-
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pages.AccountPage;
@@ -31,5 +30,13 @@ public class SignIn extends BrowserStart {
 	public void i_should_be_directed_to_my_account_summary_page() throws Throwable {
 	    accountPage.isLoggedIn();
 	}
+		
+	//This step definition is specifically for test cases where being logged in is a pre-requisite.
+	@And("^I am logged in$")
+	public void log_in(){
+		signInPage = new SignInPage(driver);
+		signInPage.LogIn("moe@test.com", "testtest");
+	}
+
 
 }

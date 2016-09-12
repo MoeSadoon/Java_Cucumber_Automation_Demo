@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2954648081,
+  "duration": 4049767131,
   "status": "passed"
 });
 formatter.scenario({
@@ -31,15 +31,45 @@ formatter.step({
 formatter.step({
   "line": 10,
   "name": "I fill in form",
+  "rows": [
+    {
+      "cells": [
+        "Field",
+        "Value"
+      ],
+      "line": 11
+    },
+    {
+      "cells": [
+        "Heading",
+        "Customer service"
+      ],
+      "line": 12
+    },
+    {
+      "cells": [
+        "Email",
+        "moe@test.com"
+      ],
+      "line": 13
+    },
+    {
+      "cells": [
+        "Message",
+        "Hello, is anyone there?"
+      ],
+      "line": 14
+    }
+  ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 11,
+  "line": 15,
   "name": "I click Submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 16,
   "name": "I should see a successful confirmation",
   "keyword": "Then "
 });
@@ -47,47 +77,47 @@ formatter.match({
   "location": "CommonSteps.i_am_on_the_homepage()"
 });
 formatter.result({
-  "duration": 4014363265,
+  "duration": 2886784745,
   "status": "passed"
 });
 formatter.match({
   "location": "Contact.i_click_on_Contact_Us()"
 });
 formatter.result({
-  "duration": 148022972,
+  "duration": 195881558,
   "status": "passed"
 });
 formatter.match({
-  "location": "Contact.i_fill_in_form()"
+  "location": "Contact.i_fill_in_form(DataTable)"
 });
 formatter.result({
-  "duration": 1860553427,
+  "duration": 2380094175,
   "status": "passed"
 });
 formatter.match({
   "location": "Contact.i_click_Submit()"
 });
 formatter.result({
-  "duration": 1092416432,
+  "duration": 1665309103,
   "status": "passed"
 });
 formatter.match({
   "location": "Contact.i_should_see_a_successful_confirmation()"
 });
 formatter.result({
-  "duration": 43283770,
+  "duration": 133267411,
   "status": "passed"
 });
 formatter.after({
-  "duration": 9635955,
+  "duration": 28724950,
   "status": "passed"
 });
 formatter.before({
-  "duration": 2631342076,
+  "duration": 3254515064,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 14,
+  "line": 18,
   "name": "Sending contact form as logged in user",
   "description": "",
   "id": "using-contact-form;sending-contact-form-as-logged-in-user",
@@ -95,19 +125,102 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 15,
+  "line": 19,
   "name": "I am on the homepage",
   "keyword": "Given "
+});
+formatter.step({
+  "line": 20,
+  "name": "I am logged in",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 21,
+  "name": "I click on Contact Us",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 22,
+  "name": "I fill in form as logged in user",
+  "rows": [
+    {
+      "cells": [
+        "Field",
+        "Value"
+      ],
+      "line": 23
+    },
+    {
+      "cells": [
+        "Heading",
+        "Customer service"
+      ],
+      "line": 24
+    },
+    {
+      "cells": [
+        "Message",
+        "Hello, is anyone there?"
+      ],
+      "line": 25
+    }
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 26,
+  "name": "I click Submit",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 27,
+  "name": "I should see a successful confirmation",
+  "keyword": "Then "
 });
 formatter.match({
   "location": "CommonSteps.i_am_on_the_homepage()"
 });
 formatter.result({
-  "duration": 6895851416,
+  "duration": 3752628445,
+  "status": "passed"
+});
+formatter.match({
+  "location": "SignIn.log_in()"
+});
+formatter.result({
+  "duration": 3799260365,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Contact.i_click_on_Contact_Us()"
+});
+formatter.result({
+  "duration": 125050914,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Contact.i_fill_in_form_as_logged_in_user(DataTable)"
+});
+formatter.result({
+  "duration": 3919142685,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Contact.i_click_Submit()"
+});
+formatter.result({
+  "duration": 1398693688,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Contact.i_should_see_a_successful_confirmation()"
+});
+formatter.result({
+  "duration": 67633014,
   "status": "passed"
 });
 formatter.after({
-  "duration": 12576795,
+  "duration": 9489782,
   "status": "passed"
 });
 formatter.uri("SignIn.feature");
@@ -119,7 +232,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 2550404168,
+  "duration": 2978138066,
   "status": "passed"
 });
 formatter.scenario({
@@ -154,32 +267,32 @@ formatter.match({
   "location": "CommonSteps.i_am_on_the_homepage()"
 });
 formatter.result({
-  "duration": 3010014028,
+  "duration": 4170579821,
   "status": "passed"
 });
 formatter.match({
   "location": "SignIn.if_I_click_on()"
 });
 formatter.result({
-  "duration": 166274831,
+  "duration": 213227936,
   "status": "passed"
 });
 formatter.match({
   "location": "SignIn.i_fill_in_my_details_and_submit()"
 });
 formatter.result({
-  "duration": 3376073630,
+  "duration": 3785690384,
   "status": "passed"
 });
 formatter.match({
   "location": "SignIn.i_should_be_directed_to_my_account_summary_page()"
 });
 formatter.result({
-  "duration": 19476946,
+  "duration": 14261339,
   "status": "passed"
 });
 formatter.after({
-  "duration": 12069930,
+  "duration": 9652152,
   "status": "passed"
 });
 });
