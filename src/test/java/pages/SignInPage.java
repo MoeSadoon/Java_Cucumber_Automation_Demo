@@ -1,5 +1,6 @@
 package pages;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -31,6 +32,10 @@ public class SignInPage extends AbstractPage {
 		driver.findElement(By.id("SubmitLogin")).click();
 		return new AccountPage(driver);
 	}
-	
+
+	public void invalidLogIn() {
+		Assert.assertTrue(driver.findElement(By.xpath("//*[contains(@class, 'alert-danger')]/ol/li"))
+				.getText().equals("Authentication failed."));
+	}
 
 }

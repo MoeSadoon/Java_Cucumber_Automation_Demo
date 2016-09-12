@@ -4,8 +4,10 @@ Feature: Using Contact form
   I want to contact someone
   So they can help me with an issue on the site
 
-  Scenario: Sending contact form as guest
+  Background: 
     Given I am on the homepage
+
+  Scenario: Sending contact form as guest
     When I click on Contact Us
     And I fill in form
       | Field   | Value                   |
@@ -16,7 +18,6 @@ Feature: Using Contact form
     Then I should see a successful confirmation
 
   Scenario: Sending contact form as logged in user
-    Given I am on the homepage
     And I am logged in
     When I click on Contact Us
     And I fill in form as logged in user
