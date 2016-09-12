@@ -40,7 +40,6 @@ public class SignIn extends BrowserStart {
 	public void i_should_get_an_error_message() throws Throwable {
 	    signInPage.invalidLogIn();
 	}
-
 		
 	//This step definition is specifically for test cases where being logged in is a pre-requisite.
 	@And("^I am logged in$")

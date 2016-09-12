@@ -8,8 +8,6 @@ import cucumber.api.java.en.Given;
 
 public class CommonSteps extends BrowserStart {
 	
-//	WebDriver driver;
-
 	@Before
 	public void setUp(){
 		getDriver();

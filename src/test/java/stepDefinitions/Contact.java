@@ -24,12 +24,8 @@ public class Contact extends BrowserStart {
 	}
 
 	@When("^I fill in form$")
-	public void i_fill_in_form(DataTable table) throws Throwable {
-		
-//		List<List<String>> data = table.raw();
-
-		data = table.raw();
-		
+	public void i_fill_in_form(DataTable table) throws Throwable {		
+		data = table.raw();		
 		contact.selectHeading(data.get(1).get(1));
 		contact.inputEmail(data.get(2).get(1));
 		contact.inputMessage(data.get(3).get(1));
@@ -38,13 +34,9 @@ public class Contact extends BrowserStart {
 	//Logged in user doesn't need to provide email
 	@When("^I fill in form as logged in user$")
 	public void i_fill_in_form_as_logged_in_user(DataTable table) throws Throwable {
-
-		List<List<String>> data1 = table.raw();
-
 		data = table.raw();
-		
-		contact.selectHeading(data1.get(1).get(1));	
-		contact.inputMessage(data1.get(2).get(1));
+		contact.selectHeading(data.get(1).get(1));	
+		contact.inputMessage(data.get(2).get(1));
 	}
 
 
